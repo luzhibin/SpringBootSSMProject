@@ -17,15 +17,4 @@ public class Application {
         System.out.println("你好");
     }
 }
-//皮卡丘看着你
-//1421521
-//215151511252115
-//21512512521521
-//215215215
-    //是的撒多撒555555555
-    //5ds4d5sa4878979879
-    //
-// 惹我热无若
-//21512512521521wfewfewfwefew
-//215215215wfeewfiwpjpwfjwf
-//amngoieniewpnvpivnpivnpewvnpiwniewnvnepvinipwe
+//撤销了所有代码修改
