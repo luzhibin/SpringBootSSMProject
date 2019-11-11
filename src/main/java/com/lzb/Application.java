@@ -11,8 +11,10 @@ import tk.mybatis.spring.annotation.MapperScan;
 @MapperScan("com.lzb.mapper")   //mapper接口扫描：在main方法上添加@MapperScan("包名") 注解
 public class Application {
 
+
     public static void main(String[] args) {
         SpringApplication.run(Application.class,args);
+        System.out.println("你好");
     }
 }
 //皮卡丘看着你
