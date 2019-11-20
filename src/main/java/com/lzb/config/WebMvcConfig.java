@@ -12,10 +12,14 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 被注解的类内部包含有一个或多个被@Bean注解的方法，
 这些方法将会被AnnotationConfigApplicationContext或AnnotationConfigWebApplicationContext类进行扫描，
 并用于构建bean定义，初始化Spring容器。*/
+ /*自定义类实现WebMvcConfigure接口，实现接口中的 addInterceptors 方法。其中，addPathPatterns表示拦截路径，
+    excludePathPatterns方法表示拦截的路径*/
 @Configuration
 public class WebMvcConfig implements WebMvcConfigurer {
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(new MyInterceptor()).addPathPatterns("/**");
+        registry.addInterceptor(new MyInterceptor())
+                .addPathPatterns("/**")
+                .excludePathPatterns("/hello");
     }
 }
